@@ -20,3 +20,20 @@ export interface ProgramInput {
   location: string;
   status: 'published' | 'draft';
 }
+
+export interface Video {
+  id: string;
+  title: string;
+  description: string | null;
+  url: string;
+  status: 'published' | 'draft';
+  created_at: string;
+  updated_at: string;
+}
+
+export interface VideoInput {
+  title: string;
+  description: string | null;
+  url: string;
+  status: 'published' | 'draft';
+}
