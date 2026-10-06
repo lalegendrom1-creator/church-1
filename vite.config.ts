@@ -14,4 +14,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  preview: {
+    host: true,
+    allowedHosts: true,
+  },
 });
